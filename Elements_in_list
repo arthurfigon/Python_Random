@@ -1,0 +1,16 @@
+"""See which's the biggest, smallest and average of 10 elements, between 100 and -20"""
+
+list = []
+temperature = 0
+for i in range(10):
+    temperature = float(input("Insert Temperature °C: "))
+    if temperature > 100 or temperature <-20:
+        while temperature > 100 or temperature <-20 :
+            temperature = float(input("Your value should be between -20 and 100 °C: "))
+    list.append(temperature)
+biggest = max(list)
+smallest = min(list)
+average = sum(list)/10
+print("The biggest temperature is: ", biggest)
+print("The smallest temperature is: ", smallest)
+print("The average temperature is: ", average)
