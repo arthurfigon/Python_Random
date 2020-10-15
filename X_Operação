@@ -1,0 +1,21 @@
+count = 1 # A simple counter
+sample = 1 # Value to organize the number in equation
+value = 1 # Value of total
+
+# Inputs
+
+terms = int(input("Number of terms: "))
+x = float(input("x value: "))
+
+# Code
+
+while count < terms:
+    if(count % 2 == 0): # Even, that means +
+        value += ((x**(sample+2))/(sample*(sample+1)))
+        count += 1
+        sample += 2
+    else: # Odd, that means -
+        value -= ((x**(sample+2))/(sample*(sample+1)))
+        count += 1
+        sample += 2
+print("Result: " + str(value))
