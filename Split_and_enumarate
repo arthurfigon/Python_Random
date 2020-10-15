@@ -1,0 +1,4 @@
+lista = input().split()
+for indice, cor in enumerate(lista):
+    lista[indice] = int(lista[indice])
+print(str(max(lista))+" eh o maior")
