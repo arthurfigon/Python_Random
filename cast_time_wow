@@ -1,0 +1,12 @@
+"""Cast Time = Base Cast Time / ((Spell Haste Percentage / 100) + 1)
+Haste required = ((Base Cast Time / Desired Cast Time) - 1) * 100"""
+
+bct = float(input("Tempo Base da Spell: "))
+hp = float(input("Porcentagem em Haste: "))
+dct = float(input("Tempo de Cast Desejado: "))
+
+ct = bct/((hp/100)+1)
+hr = ((bct/dct)-1)*100
+
+print("Cast time: %.2f" %ct)
+print("Haste Required: %.2f" %hr)
